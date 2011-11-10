@@ -1,0 +1,17 @@
+{% from datetime import datetime %} 
+{{ now = datetime.today() }}
+<html>
+    <head>
+        <title>{{ title }}</title>
+    </head>
+    <body>
+        <p>
+        Time: {{ now.hour }}:{{ now.minute }}:{{ now.second }}
+        </p>
+        <ul>
+            {% for item in items %}
+                <li>{{ escape(item) }}  </li>
+            {% end %}
+        </ul>
+    </body>
+</html>

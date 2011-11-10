@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>{{ title }}</title>
+        <link rel="stylesheet" type="text/css" href="{{ static_url("format.css") }}"/>
+    </head>
+    <body>
+        <form action="/intern" method="post">
+            {% raw xsrf_form_html() %}
+            <table class="internal">
+                <tr><td>
+                    <input type="text" name="topic" class="text" size="50">
+                </td></tr>
+                <tr><td>
+                     <textarea name="content" cols="50" rows="10"></textarea>
+                 </tr></td>
+                 <tr><td>
+                     <div align="right">
+                        <input type="submit" value="Submit"/>
+                    </div>
+                </td></tr>
+            </table>
+        </form> 
+    </body>
+</html>

@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>{{ title }}</title>
+        <link rel="stylesheet" type="text/css" href="{{ static_url("format.css") }}">
+    </head>
+    <body>
+        <form action="/login" method="post">
+            {% raw xsrf_form_html() %} 
+            <table class="login">
+                <tr><td>
+                    <input type="text" class="text" name="username"/>
+                    <input type="submit" value="Log in"/>
+                </tr></td>
+            </table>
+        </form>
+    </body>
+</html>

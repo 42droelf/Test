@@ -1,0 +1,32 @@
+body { 
+    font-family: Ubuntu; 
+    font-size: 100%; 
+    background: #6699FF;
+}
+table.login {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25%;
+    margin-bottom: 25%;
+}
+
+table.entry {
+    margin-top: 0%;
+    margin-bottom: 5%;
+    margin-left: 25%;
+}
+
+table.internal {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+}
+input, textarea {
+    font-family: Ubuntu;
+    font-size:100%;
+}
+input.text, textarea, td.entry {
+    background-color: #FFFFCC;
+    border: 1px solid;
+}
+
